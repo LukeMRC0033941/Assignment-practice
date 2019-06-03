@@ -19,12 +19,22 @@ namespace Assignment_practice
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double width, height, area;
-            width = Convert.ToDouble(textBox1.Text);
-            height = Convert.ToDouble(textBox2.Text);
-            area = width * height;
-            label1.Text= "Area = " + area; 
+            try
+            {
+                //Calculate area of a rectangle
+                double width, height, area;
+                width = Convert.ToDouble(textBox1.Text);
+                height = Convert.ToDouble(textBox2.Text);
+                area = width * height;
+                label1.Text = "Area = " + area;
+            }
+            catch
+            {
+                MessageBox.Show("Type in Number form.");
+            }
         }
+        
 
     }
 }
+
