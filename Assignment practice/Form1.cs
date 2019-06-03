@@ -19,17 +19,12 @@ namespace Assignment_practice
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            double width, height, area;
+            width = Convert.ToDouble(textBox1.Text);
+            height = Convert.ToDouble(textBox2.Text);
+            area = width * height;
+            label1.Text= "Area = " + area; 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
